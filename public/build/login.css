@@ -1,0 +1,23 @@
+/*!*****************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].oneOf[1].use[1]!./node_modules/resolve-url-loader/index.js??ruleSet[1].rules[4].oneOf[1].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].oneOf[1].use[3]!./assets/styles/login.scss ***!
+  \*****************************************************************************************************************************************************************************************************************************************************************************/
+.btn-color {
+  background-color: #0e1c36;
+  color: #fff;
+}
+
+.profile-image-pic {
+  height: 200px;
+  width: 200px;
+  object-fit: cover;
+}
+
+.cardbody-color {
+  background-color: #ebf2fa;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoibG9naW4uY3NzIiwibWFwcGluZ3MiOiI7OztBQUFBO0VBQ0k7RUFDQTtBQUNKOztBQUdFO0VBQ0U7RUFDQTtFQUNBO0FBQUo7O0FBS0U7RUFDRTtBQUZKOztBQUtFO0VBQ0U7QUFGSixDIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vLy4vYXNzZXRzL3N0eWxlcy9sb2dpbi5zY3NzIl0sInNvdXJjZXNDb250ZW50IjpbIi5idG4tY29sb3J7XG4gICAgYmFja2dyb3VuZC1jb2xvcjogIzBlMWMzNjtcbiAgICBjb2xvcjogI2ZmZjtcbiAgICBcbiAgfVxuICBcbiAgLnByb2ZpbGUtaW1hZ2UtcGlje1xuICAgIGhlaWdodDogMjAwcHg7XG4gICAgd2lkdGg6IDIwMHB4O1xuICAgIG9iamVjdC1maXQ6IGNvdmVyO1xuICB9XG4gIFxuICBcbiAgXG4gIC5jYXJkYm9keS1jb2xvcntcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjZWJmMmZhO1xuICB9XG4gIFxuICBhe1xuICAgIHRleHQtZGVjb3JhdGlvbjogbm9uZTtcbiAgfSJdLCJuYW1lcyI6W10sInNvdXJjZVJvb3QiOiIifQ==*/

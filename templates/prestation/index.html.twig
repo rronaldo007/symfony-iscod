@@ -1,0 +1,37 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Détails de la prestation{% endblock %}
+
+{% block body %}
+<div class="container mt-4">
+    <h1>{{ prestation.nom }}</h1>
+    
+    <div class="card mt-4">
+        <div class="card-body">
+            <div class="row">
+                <div class="col-md-8">
+                    <p class="card-text">
+                        <strong>Type:</strong> {{ prestation.extrait }}
+                    </p>
+                    <p class="card-text">
+                        <strong>Description:</strong> {{ prestation.description }}
+                    </p>
+                    <p class="card-text">
+                        <strong>Rémunération:</strong> {{ prestation.remuneration }}€
+                    </p>
+                    <p class="card-text">
+                        <strong>Téléphone:</strong> {{ prestation.telephone }}
+                    </p>
+                    <p class="card-text">
+                        <strong>Date de création:</strong> {{ prestation.createdAt|date('d/m/Y H:i') }}
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="mt-4 d-flex">
+        <a href="{{ path('app_home') }}" class="btn btn-secondary">Retour à la liste</a>
+    </div>
+</div>
+{% endblock %}

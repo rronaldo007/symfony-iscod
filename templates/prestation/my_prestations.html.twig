@@ -1,0 +1,46 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello HomeController!{% endblock %}
+
+{% block body %}
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="">
+                <h3>Mes Prestations</h3>
+
+                <div>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">Date de la demande</th>
+                                <th scope="col">Nom</th>
+                                <th scope="col">Extrait</th>
+                                <th scope="col">Remuneration</th>
+                                <th scope="col">Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for prestation in prestations %}
+                            <tr>
+                                <td>{{ prestation.createdAt|date("d/m/Y") }}</td>
+                                <td>{{ prestation.nom }}</td>
+                                <td>{{ prestation.extrait }}</td>
+                                <td>{{ prestation.remuneration }}€</td>
+                                <td >
+                                    <div Class="d-flex flex-row">
+                                    <a href="{{ path('app_prestation_show', {'id': prestation.id}) }}" class="btn btn-primary">Voir</a>
+                                    <a href="{{ path('app_prestation_edit', {'id': prestation.id}) }}" class="btn btn-warning ms-2">Modifier</a>
+                                    <a href="{{ path('app_prestation_delete', {'id': prestation.id}) }}" class="btn btn-danger ms-2">Supprimer</a>
+                                    </div>
+                                </td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+          </div>
+    </div>
+
+{% endblock %}
